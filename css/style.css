@@ -1,0 +1,248 @@
+/*重置*/
+li{
+    list-style: none;
+}
+p{
+    margin:0;
+}
+/**********首页***********/
+/*顶部导航栏容器*/
+/*顶部P*/
+.nav-section{
+    position: relative;
+}
+.phone_menu_inner {
+    position:relative; 
+    margin:0; 
+    border-bottom: 1px solid #ccc;
+    line-height: 28px;
+}
+/*隐藏导航栏按钮*/
+.btn_show_menu {
+    height: 30px;
+    display: inline-block;
+    width: 30px;
+    font-size: 14px;
+    background-image: url(../images/icon_menu.png);
+    background-size: 17px 12px;
+    background-position: 50% 52%;
+    background-repeat: no-repeat
+}
+.btn_show_menu:hover {
+    background-image: url(../images/icon_menu.png)
+}
+.phone_menu_inner_over{
+    display: none;
+    padding: 0px 0;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    z-index: 100;
+    background: #fff;
+    width: 100%;
+}
+/*隐藏导航栏*/
+.phone_menu_inner_over {
+    overflow: hidden;
+    position: absolute;
+    background: #fff;
+}
+
+.phone_menu_inner_over  a{
+    color: #666;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: -12px;
+    padding: 10px 23px;
+}
+.phone_menu_inner_over .nav-text-color{
+    color: #0e8fe9;
+}
+
+@-webkit-keyframes bounceInLeft {
+  from {
+    -webkit-transform: translate(50%, 0%);
+    transform: translate(50%,0%);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes bounceInLeft {
+
+  from {
+    -webkit-transform: translate(50%, 0%);
+    transform: translate(50%,0%);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+  }
+}
+.active{
+   display: block;
+    -webkit-animation: bounceInLeft 0.3s linear;
+    animation: bounceInLeft  0.3s linear;
+}
+/*中间logo**/
+.phone_logo {
+    width: 89px;
+    height: 23px;
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    margin-left: -32px;
+}
+.phone_logo img{
+    width: 80%;
+}
+/*视频播放*/
+.vadio-container{
+    margin: auto;
+    /*position: absolute;
+    left: 0;
+    right: 0;*/
+    display: none;
+    text-align: center;
+   /* top: 50%;
+    margin-top: -384px;*/
+}
+
+
+/*大图区域*/
+.main-img-container .main-img {
+    position: relative;
+}
+/*视频按钮*/
+.main-img-container .main-img .vadio-btn{
+    margin: auto;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    margin-left: -55px;
+    width: 183px;
+    height: 181px;
+    z-index: 2;
+}
+.main-img-container .main-img .vadio-btn img{
+    width: 60%;
+}
+.main-img-container .main-img img{
+    width: 100%;
+}
+/**产品产品展示区域*/
+.product-container{
+    border-bottom:1px solid #ddd;
+    overflow: hidden;
+}
+.product-container a{
+    display: inline-block;
+    width: 49%;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+}
+.product-container a img{
+    width: 100%;
+}
+.product-container  .product-1,.product-container .product-3{
+    border-left: 0;
+}
+.product-container  .product-1 img{
+    width: 87%;
+    margin: 13px 0 0 10px;
+}
+/*.last-product{
+    border-top:1px solid #ddd; 
+    border-left:1px solid #ddd;
+}*/
+/*尾部**/
+.jf_footer{
+    text-align: center;
+    margin: 25px 0;
+    color: #ccc;
+}
+/**********关于我们***********/
+/*加油折扣表*/
+.cpjs-tb {
+    border: 1px solid #20b4f0;
+    width: 100%;
+    color: #666;
+}
+.cpjs-tb span{
+    font-size: 12px;
+}
+.cpjs-tb thead {
+    background: #20b4f0;
+    color: #fff;
+    font-size: 12px;
+}
+.cpjs-tb tr:last-child td {
+    border-bottom: none;
+}
+.cpjs-tb tr td:nth-child(1) {
+    width: 20%;
+    text-align: center;
+    border-right: 1px solid #20b4f0;
+    padding: 10px 0;
+}
+.cpjs-tb tr td:nth-child(2) {
+    width: 12%;
+    text-align: center;
+    border-right: 1px solid #20b4f0;
+}
+.cpjs-tb tr td {
+    border: 1px solid #20b4f0;
+    text-align: center;
+}
+.col-sm-9 div {
+    font-size: 20px;
+}
+
+/**********常见问题***********/
+.infor-container dl.common-problem-container{
+    margin:0 auto;
+    padding-bottom: 74px;
+}
+.infor-container dl.common-problem-container dd{
+    margin: 0 37px;
+    margin-top: 30px;
+    position: relative;
+}
+/*.section dl.common-problem-container dd hr{
+    border-bottom: 1px solid #ddd;
+}*/
+.infor-container dl.common-problem-container dd.hide-border{
+    border-bottom: none;
+}
+.infor-container dl.common-problem-container dd .down-btn img{
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+}
+.infor-container dl.common-problem-container dd .hide-text{
+    display: none;
+    font-size: 12px;
+}
+.infor-container dl.common-problem-container dd hr{
+    margin-top: 0px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+.infor-container dl.common-problem-container dd .hide-text.show{
+    display: block;
+}
+
+.infor-container dl.common-problem-container dd span a{
+    color: #20b4f0;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+    text-decoration: none;
+}

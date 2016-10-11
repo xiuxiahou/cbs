@@ -1,0 +1,66 @@
+<!--ONLINE-->
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+    <meta name="Keywords" content="加油优惠平台，加油折扣，优惠实惠，加油，用车优惠多,建服易车有限公司">
+    <meta name="description" content="加油9折优惠，让用车更实惠更轻松，ETC、保险、一站式满足有车一族的用车需求，降低用车成本，提高服务质量，畅享尊贵驾车生活。" />
+    <meta name="Keywords" content="加油优惠平台，加油折扣，优惠实惠，加油，用车优惠多,建服易车有限公司">
+    <meta name="description" content="加油9折优惠，让用车更实惠更轻松，ETC、保险、一站式满足有车一族的用车需求，降低用车成本，提高服务质量，畅享尊贵驾车生活。" />
+    <title>车倍爽</title>
+    <!-- CSS --> 
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/animate.css" rel="stylesheet"> -->
+    <script type="text/ecmascript" src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+          <link href="css/forie.css" rel="stylesheet">
+          <script type="text/ecmascript" src="js/jquery-1.8.0.min.js"></script>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+</head>
+<body>
+    <div class="dd_container">
+        <!--  phone menu  -->
+        <section class="nav-section">
+            <p class="phone_menu_inner">
+                <a class="btn_show_menu"></a>
+                <a class="phone_logo" href="index.html">
+                    <img src="images/logo.png"/>
+                </a>
+            </p>
+            <div class="phone_menu_inner_over" id="phone_menu">
+              <a href="index.html" class="nav-text-color">首页</a>
+              <a href="about_us.html">关于我们</a>
+              <a href="common_problem.html">常见问题</a>
+              <a href="http://www.jianfuyiche.com/">企业版</a>
+            </div>
+        </section>
+        <section class="main-img-container">
+            <div class="main-img"><img src="images/h5_turn.png"/> </div>
+        </section>
+        <!--  footer  -->
+        <footer class="jf_footer">©2015 京ICP证15033444号</span></footer>
+    </div>
+    <script type="text/javascript">
+        /*点击出现导航栏从左边到右边出现动画*/
+        var $nav=$('.phone_menu_inner_over');
+        $('.btn_show_menu').click(function(){ 
+            if(!$nav.hasClass('active')){
+                $nav.addClass('active');
+            }else{
+                $nav.removeClass('active');
+            }   
+        });
+        /*滚动导航消失*/
+        $(document).scroll(function(){
+            if($nav.hasClass('active')){
+                $nav.removeClass('active');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
